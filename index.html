@@ -1,117 +1,212 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="eng">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Administration panel</title>
-    <link rel="stylesheet" href="images/icons/css/Glyphter.css"> <!--Czy to jest potrzebne?-->
+    <link rel="stylesheet" href="images/icons/css/Glyphter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <div class="container">
-      <aside class="sidebar">
 
+      <aside class="sidebar">
+        <div class="sidebar-one">
+          <h2>Just do it</h2>
+          <a href="#" class="hamburger"><i class="fas fa-bars"></i></a>
+        </div >
+        <div class="sidebar-two">
+          <ul>
+            <li>
+              <a href="#"><i class="icon-general"></i>General</a>
+            </li>
+            <li>
+              <a href="#"><i class="icon-details"></i>Details</a> 
+            </li>
+            <li>
+              <a href="#"><i class="icon-links"></i>Links</a>
+            </li>
+            <li>
+              <a href="#"><i class="icon-banners"></i>Banners</a>
+            </li>
+            <li>
+              <a href="#"><i class="icon-personaldata"></i>Personal data</a>
+            </li>
+            <li>
+              <a href="#"><i class="icon-payout"></i>Payout</a>
+            </li>
+            <li>
+              <a href="#"><i class="icon-postback"></i>Postback</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar-three">
+          <h4>YOUR MANAGER</h4>
+          <img src="#" alt="manager">
+          <p>Mikhael L.</p>
+        </div>
       </aside>
+    
       <main class="container-main">
-        <nav>
-          
+      
+        <nav class="navigation">
+          <ul>
+            <li> 
+              <a href="#" class="nav-wallet"><i class="icon-wallet"></i>$1,500.00<i class="icon-arrow-down"></i></a>
+            </li>
+            <li>
+              <a href="#" ><p class="dot-notification"></p><i class="icon-notification dot-icon test"></i></a>
+            </li>
+            <li>
+              <a href="#" class="nav-name"><i class="icon-profile"></i>Leonardo Dicaprio</a>
+            </li>
+            <li>
+              <a href="#"><i class="icon-quit"></i></a>
+            </li>
+          </ul>
         </nav>
+
         <div class="container-sections">
-          <section class="statistic">
-            <h1>General statistic</h1>
-            <form>
-              <input type="date" class="input-date">
-              <input type="date" class="input-date">
-              <ul>
-                <li class="btn btn-statistic"><a href="#">+ add new</a></li>
-              </ul>
-            </form>
-            <form>
-              <input type="number" class="input-number" placeholder="Visit Signups">
-              <input type="number" class="input-number" placeholder="Net deposit">
-              <input type="number" class="input-number" placeholder="FTD">
-              <input type="number" class="input-number" placeholder="Turn over">
-            </form>
-            <div class="chart">
-              <h2>Earnings chart</h2>
-              <div class="legend">
-                <div>
-                  <p>Signups</p>
-                </div>
-                <div>
-                  <p>FTD</p>
-                </div>
-                <div>
-                  <p>Earned</p>
-                </div>
+
+          <section class="section">
+            <div class="row">
+              <h4>GENERAL STATISTIC</h4>
+            </div>
+            
+            <form class=" row row-date">
+              <fieldset>
+                <input type="date" class="input">
+                <input type="date" class="input input-r">
+                <a href="#" class="date-a"><i class="icon-calendar date-i"></i></a>
+              </fieldset>
+              <div class="btn-date">
+                <a href="#" class="btn btn-date-link"><i class="icon-refresh btn-date-i"></i></a>
               </div>
+              
+            </form>
+            
+              <div>
+              <table class="row-table table-data">
+                <tbody>
+                  <tr>
+                    <td>Visit Signups</td>
+                    <td>124</td>
+                    <td></td>
+                    <td></td>
+                    <td>Net deposit</td>
+                    <td>564</td>
+                  </tr>
+                  <tr>
+                    <td>FTD</td>
+                    <td>445</td>
+                    <td></td>
+                    <td></td>
+                    <td>Turn over</td>
+                    <td>432</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <div class="row-chart">
+              <div class="row-title">
+                <h4>Earnings chart</h4>
+              </div>
+              <div class="row-legend">
+                <div class="btn-legend"><p class="dot dot-signup"></p><p>Signups</p></div>
+                <div class="btn-legend"><p class="dot dot-ftd"></p><p>FTD</p></div>
+                <div class="btn-legend"><p class="dot dot-earned"></p><p>Earned</p></div>
+              </div> 
               <div class="chart">
-                
+                <canvas id="myChart"></canvas>
               </div>
             </div>
           </section>
 
-          <section class="links">
-            <h1>Links</h1>
-            <div>
-              <ul>
-                <li class="btn btn-links"><a href="#">+ add new</a></li>
-              </ul>
+          <section class="section">
+           
+            <div class="row">
+              <h4>LINKS</h4>
             </div>
-            <table class="table">
+            <div class="row-btn">
+              <a href="#" class="btn btn-two">+ add new</a>
+            </div>
+
+            <table class="table-links row-table">
               <tbody>
                 <tr>
                   <td>Home page</td>
-                  <td>http://www.homepage.com</td>
+                  <td><a href ="#">http://www.homepage.com</a></td>
+                  <td><a href="#"><i class="icon-links"></a></td>
+                  <td><a href="#"><i class="icon-trash"></a></td>
                 </tr>
                 <tr>
                   <td>Currently offer</td>
-                  <td>http://www.currently.com</td>
+                  <td><a href ="#">http://www.currently.com</a></td>
+                  <td><a href="#"><i class="icon-links"></a></td>
+                  <td><a href="#"><i class="icon-trash"></a></td>
                 </tr>
                 <tr>
                   <td>Blurpix</td>
-                  <td>http://www.blurpix.com</td>
+                  <td><a href ="#">http://www.blurpix.com</a></td>
+                  <td><a href="#"><i class="icon-links"></a></td>
+                  <td><a href="#"><i class="icon-trash"></a></td>
                 </tr>
                 <tr>
                   <td>Your site</td>
-                  <td>http://www.yoursite.com</td>
+                  <td><a href ="#">http://www.yoursite.com</a></td>
+                  <td><a href="#"><i class="icon-links"></a></td>
+                  <td><a href="#"><i class="icon-trash"></a></td>
                 </tr>
                 <tr>
                   <td>Google</td>
-                  <td>http://www.google.com</td>
+                  <td><a href ="#">http://www.google.com</a></td>
+                  <td><a href="#"><i class="icon-links"></a></td>
+                  <td><a href="#"><i class="icon-trash"></a></td>
                 </tr>
                 <tr>
                   <td>Facebook</td>
-                  <td>http://www.facebook.com</td>
+                  <td><a href ="#">http://www.facebook.com</a></td>
+                  <td><a href="#"><i class="icon-links"></a></td>
+                  <td><a href="#"><i class="icon-trash"></a></td>
                 </tr>
                 <tr>
                   <td>Dashboard</td>
-                  <td>http://www.dashboard.com</td>
+                  <td><a href ="#">http://www.dashboard.com</a></td>
+                  <td><a href="#"><i class="icon-links"></a></td>
+                  <td><a href="#"><i class="icon-trash"></a></td>
                 </tr>
                 <tr>
                   <td>Blurax</td>
-                  <td>http://www.blurax.com</td>
+                  <td><a href ="#">http://www.blurax.com</a></td>
+                  <td><a href="#"><i class="icon-links"></a></td>
+                  <td><a href="#"><i class="icon-trash"></a></td>
                 </tr>
                 <tr>
                   <td>Piece of Wine</td>
-                  <td>http://www.pieceofwine.com</td>
+                  <td><a href ="#">http://www.pieceofwine.com</a></td>
+                  <td><a href="#"><i class="icon-links"></a></td>
+                  <td><a href="#"><i class="icon-trash"></a></td>
                 </tr>
                 <tr>
                   <td>Twitter</td>
-                  <td>http://www.twitter.com</td>
+                  <td><a href ="#">http://www.twitter.com</a></td>
+                  <td><a href="#"><i class="icon-links"></i></a></td>
+                  <td><a href="#"><i class="icon-trash"></i></a></td>
                 </tr>
               </tbody>
             </table>
-            <div>
-              <ul>
-                <li class="btn btn-links"><a href="#">+ add new</a></li>
-              </ul>
+            <div class="row-btn">
+              <a href="#" class="btn btn-two">+ add new</a>
             </div>
           </section>
 
         </div>
       </main>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

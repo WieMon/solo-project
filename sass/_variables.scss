@@ -1,10 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Damion&display=swap");
+
+
 /* Colors */
 $paragraph-color: #000000;
 $brand-main-color: #ff0000;
+$color-one: #979797;
+$color-two: #B2B2B2;
+$color-three: #E3E3E3;
+$color-four: #F5F5F2;
+$color-five: #F58220;
+$color-six: #FFA200;
+$color-seven: #04AE00;
+$color-eight: #74B67A;
+$color-nine: #96CC9B;
+$color-ten: #DE5252;
+$color-eleven: #EC7171;
+$color-twelve: #56819F;
+$color-thirteen: #2f3640;
+
 
 /* Font sizes */
 $paragraph-font-size: 16px;
+$font-size-one: 14px;
+
 
 /* Fonts */
 $brand-font: "Open Sans", Helvetica, Arial;
 $paragraph-font: "Open Sans", Helvetica, Arial;
+$font-one: 'Damion', cursive;
+
+/*Size-layout*/
+$breakpoint-tablet: "max-width: 960px";
+$breakpoint-mobile: "max-width: 540px";
+$sidebar-width: 170px;
+$sidebar-tablet-width: $sidebar-width * 0.66;
+$topbar-height: 48px;
+$container-max-width: 1165px;

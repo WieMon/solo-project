@@ -1,0 +1,52 @@
+.btn-legend {
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  background: $color-three;
+  margin: 1em;
+  &:last-of-type {
+    background: none;
+  }
+  p {
+    margin: 0.5em;
+  }
+}
+
+.btn-date-link {
+  position: relative; 
+  .btn-date-i {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+  }
+  
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+
+.dot-signup {
+  background: #8DBEC8;
+}
+
+.dot-ftd {
+  background: #F29E4E;
+}
+
+.dot-earned {
+  background: #71B374;
+}
+
+.btn {
+  text-decoration: none;
+  background: $color-five;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  &:hover {
+    background: $color-six;
+  }
+}
