@@ -58,7 +58,7 @@
 }
 
 .sidebar-three {
-  
+  position: relative;
   padding: 0 0.5em;
   font-family: $brand-font;
   color: $color-three;
@@ -76,7 +76,7 @@
 }
 
 .sidebar-img {
-  position: relative;
+  
   height: 50px;
   width: 40px;
   border-radius: 45px;
