@@ -1,0 +1,39 @@
+/*Dots----------------------------------------------------------------*/
+.dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+
+.dot-sidebar {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  top: 415px;
+  left: 156px;
+  background: $color-seven;
+}
+
+.dot-signup {
+  background: #8DBEC8;
+}
+
+.dot-ftd {
+  background: #F29E4E;
+}
+
+.dot-earned {
+  background: #71B374;
+}
+
+.dot-notification {
+  position: absolute; 
+  top: 5px;
+  left: 32px;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background: $color-five;
+}
+

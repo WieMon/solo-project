@@ -11,13 +11,13 @@ var chart = new Chart(ctx, {
             label: 'Signups',
             backgroundColor: '#8DBEC8',
             borderColor: '#8DBEC8',
-            data: [350, 180, 220, 350, 400, 380, 380, 280, 300, 310]
+            data: [280, 150, 200, 280, 350, 330, 320, 180, 250, 270]
         },
         {
           label: 'FTD',
           backgroundColor: '#F29E4E',
           borderColor: '#F29E4E',
-          data: [400, 170, 300, 280, 450, 400, 120, 200, 500, 320],
+          data: [300, 140, 240, 220, 370, 100, 150, 200, 400, 280],
         },
         {
           label: 'Earned',

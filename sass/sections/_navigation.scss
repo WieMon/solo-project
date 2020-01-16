@@ -1,0 +1,72 @@
+/*Navigation*/
+.navigation {
+  justify-content: flex-end;
+  background: $color-four;
+  height: $topbar-height;
+  padding: 0;
+  margin: 0;
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    list-style-type: none; 
+    text-decoration: none;
+    padding: 1.3em 0.5em 0.5em 0.5em;
+    margin-right: -5px;
+    margin-left: -3px;
+    border-left: 1px solid $color-two;
+  
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &:hover {
+      background: $color-three;
+    }
+    a {
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      color: $color-one;
+      font-size: $font-size-one;
+      font-family: $paragraph-font;
+      
+    }
+    i {
+      padding: 0.7em;
+      font-size: $font-size-two;
+    }
+  }
+}
+
+.navigation .nav-wallet {
+  font-weight: bold;
+  font-size: $font-size-two;
+  i {
+    font-weight: normal;
+    color: $color-two; 
+    padding-left: 0.3em;
+    margin-left: 8px;
+   
+    &:nth-of-type(2) {
+      font-size: $font-size-one;
+      padding-left: 1.5em;
+      padding-right: 0.5em;
+    }
+  }
+}
+
+.navigation .nav-name {
+  color: $color-twelve;
+ 
+  i {
+    color: $color-two; 
+    //padding-left: 0.5em;
+  }
+}
+
+
+

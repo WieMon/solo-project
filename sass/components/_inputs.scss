@@ -1,0 +1,45 @@
+/*Input------------------------------------------------------------*/
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+fieldset {
+  padding: 0.2em;
+  margin: 1.2em;
+  border: 1px solid $color-three;
+  border-left: none;
+  width: 320px;
+}
+
+.input {
+  border: hidden;
+  height: 30px;
+  //width: 140px;
+  padding: 0.5em 0.5em 0.5em 1em;
+  color:  $color-three;
+  background: none;
+  outline: none;
+
+}
+
+.input-r {
+  border-left: 1px solid $color-three;
+  //width: 160px;
+  padding-left: 0.5em;
+}
+
+
+.date-i {
+  position: absolute;
+  right: 387px;
+  top: 45px;
+  color: $color-one;
+}

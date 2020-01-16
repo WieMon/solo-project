@@ -14,11 +14,11 @@
     <div class="container">
 
       <aside class="sidebar">
-        <div class="sidebar-one">
+        <div class="row sidebar-one">
           <h2>Just do it</h2>
-          <a href="#" class="hamburger"><i class="fas fa-bars"></i></a>
+          <a href="#" class="hamburger"><i class="fas fa-bars hamburger-icon"></i></a>
         </div >
-        <div class="sidebar-two">
+        <div class="row sidebar-two">
           <ul>
             <li>
               <a href="#"><i class="icon-general"></i>General</a>
@@ -45,14 +45,15 @@
         </div>
         <div class="sidebar-three">
           <h4>YOUR MANAGER</h4>
-          <img src="#" alt="manager">
-          <p>Mikhael L.</p>
+          <img src="images/manager.png" class="sidebar-img" alt="manager">
+          <p class="dot-sidebar"></p>
+          <p class="name">Mikhaela L.</p>
         </div>
       </aside>
     
       <main class="container-main">
       
-        <nav class="navigation">
+        <nav class="row navigation">
           <ul>
             <li> 
               <a href="#" class="nav-wallet"><i class="icon-wallet"></i>$1,500.00<i class="icon-arrow-down"></i></a>
@@ -72,11 +73,11 @@
         <div class="container-sections">
 
           <section class="section">
-            <div class="row">
+            <div class="row-border">
               <h4>GENERAL STATISTIC</h4>
             </div>
             
-            <form class=" row row-date">
+            <form class="row row-border row-item-center row-date">
               <fieldset>
                 <input type="date" class="input">
                 <input type="date" class="input input-r">
@@ -87,35 +88,45 @@
               </div>
               
             </form>
-            
-              <div>
-              <table class="row-table table-data">
-                <tbody>
-                  <tr>
-                    <td>Visit Signups</td>
-                    <td>124</td>
-                    <td></td>
-                    <td></td>
-                    <td>Net deposit</td>
-                    <td>564</td>
-                  </tr>
-                  <tr>
-                    <td>FTD</td>
-                    <td>445</td>
-                    <td></td>
-                    <td></td>
-                    <td>Turn over</td>
-                    <td>432</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            
-            <div class="row-chart">
+
+            <div class="row-table row-center">
+              <div class="table-wrapper">
+                <div class="col-sm-6">
+                  <table class="table">
+                    <tbody >
+                      <tr>
+                        <td>Visit Signups</td>
+                        <td>124</td>
+                      </tr>
+                      <tr>
+                        <td>FTD</td>
+                        <td>445</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="col-sm-6">
+                  <table class="table table-right">
+                    <tbody >
+                      <tr>
+                        <td>Net deposit</td>
+                        <td>564</td>
+                      </tr>
+                      <tr>
+                        <td>Turn over</td>
+                        <td>432</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+                         
+            <div class="row row-center row-chart">
               <div class="row-title">
                 <h4>Earnings chart</h4>
               </div>
-              <div class="row-legend">
+              <div class="row row-item-center">
                 <div class="btn-legend"><p class="dot dot-signup"></p><p>Signups</p></div>
                 <div class="btn-legend"><p class="dot dot-ftd"></p><p>FTD</p></div>
                 <div class="btn-legend"><p class="dot dot-earned"></p><p>Earned</p></div>
@@ -128,14 +139,14 @@
 
           <section class="section">
            
-            <div class="row">
+            <div class="row-border">
               <h4>LINKS</h4>
             </div>
             <div class="row-btn">
               <a href="#" class="btn btn-two">+ add new</a>
             </div>
 
-            <table class="table-links row-table">
+            <table class="table-links row-center-links row-table">
               <tbody>
                 <tr>
                   <td>Home page</td>

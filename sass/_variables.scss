@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Damion&display=swap");
+//@import url("https://fonts.googleapis.com/css?family=Damion&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Damion|Open+Sans&display=swap&subset=latin-ext");
 
 
 /* Colors */
@@ -22,6 +23,7 @@ $color-thirteen: #2f3640;
 /* Font sizes */
 $paragraph-font-size: 16px;
 $font-size-one: 14px;
+$font-size-two: 18px;
 
 
 /* Fonts */
@@ -30,9 +32,9 @@ $paragraph-font: "Open Sans", Helvetica, Arial;
 $font-one: 'Damion', cursive;
 
 /*Size-layout*/
-$breakpoint-tablet: "max-width: 960px";
-$breakpoint-mobile: "max-width: 540px";
-$sidebar-width: 170px;
+//$breakpoint-medium: "max-width: 960px";
+$breakpoint-small: "max-width: 767px";
+$sidebar-width: 195px;
 $sidebar-tablet-width: $sidebar-width * 0.66;
-$topbar-height: 48px;
-$container-max-width: 1165px;
+$topbar-height: 60px;
+$container-max-width: 1312px;
