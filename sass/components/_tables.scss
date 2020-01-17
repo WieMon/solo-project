@@ -11,6 +11,7 @@
   font-size: $paragraph-font-size;
   border-collapse: collapse;
   tr {
+    border-bottom: 1px solid $color-three;
     &:hover {
       background: $color-three;
       cursor: pointer;
@@ -18,12 +19,11 @@
   }
   td {
     padding: 20px 5px 7px 5px;
-    border-bottom: 1px solid $color-three;
+    
     text-align: left;
     &:nth-child(even) {
       width: 30%;
       border: none;
-      border-bottom: 1px solid $color-three;
       margin-right: 30px;
       text-align: right;
       color: $paragraph-color;

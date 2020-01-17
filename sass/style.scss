@@ -1,7 +1,7 @@
 @import "variables";
 @import "mixins";
 @import "normalize";
-@import "layout";
+//@import "layout";
 @import "components/buttons";
 @import "components/dots";
 @import "components/titles";
@@ -9,6 +9,7 @@
 @import "components/inputs";
 @import "sections/sidebar";
 @import "sections/navigation";
+@import "layout";
 
 /* Components */
 //@import "components/form_field";
