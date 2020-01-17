@@ -17,6 +17,13 @@ fieldset {
   border: 1px solid $color-three;
   border-left: none;
   width: 320px;
+  &:hover {
+    border: 1px solid $color-thirteen;
+    .date-i {
+      color: $color-thirteen;
+    }
+  }
+ 
 }
 
 .input {
@@ -27,6 +34,8 @@ fieldset {
   color:  $color-three;
   background: none;
   outline: none;
+  cursor: pointer;
+ 
 
 }
 
