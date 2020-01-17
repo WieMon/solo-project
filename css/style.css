@@ -755,11 +755,11 @@ fieldset:hover .date-i {
   padding-right: 0.5em;
 }
 
-.navigation .nav-name {
+.nav-name .nav-text {
   color: #56819F;
 }
 
-.navigation .nav-name i {
+.nav-name .nav-text i {
   color: #B2B2B2;
 }
 
@@ -935,8 +935,63 @@ fieldset:hover .date-i {
         flex: 0 0 100%;
     max-width: 100%;
   }
+  .container {
+    height: calc(100vh - 60px);
+  }
   .sidebar {
     width: 50px;
+    position: relative;
+  }
+  .sidebar-one h2 {
+    display: none;
+  }
+  .sidebar-one .hamburger {
+    margin: 10px 0;
+    padding-left: 5px;
+  }
+  .sidebar-two ul {
+    margin: 0 0;
+  }
+  .sidebar-two ul li {
+    padding: 0.5em 0.4em;
+  }
+  .sidebar-two ul li .sidebar-text {
+    display: none;
+  }
+  .sidebar-three {
+    padding: 0;
+    margin: 10px 0;
+  }
+  .sidebar-three h4 {
+    display: none;
+  }
+  .sidebar-three .sidebar-img {
+    margin: 10px 0 5px 5px;
+  }
+  .sidebar-three .dot-sidebar {
+    top: -7px;
+    left: 35px;
+  }
+  .sidebar-three .name {
+    display: none;
+  }
+  .navigation {
+    position: absolute;
+    bottom: 170px;
+    left: 10px;
+    background-color: transparent;
+    display: block;
+  }
+  .navigation ul li {
+    display: block;
+    padding: 8px;
+  }
+  .navigation .nav-text {
+    display: none;
+  }
+  .navigation .dot-notification {
+    top: -8px;
+    left: 32px;
   }
   .container-sections {
     padding: 0.4em;

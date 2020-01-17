@@ -103,8 +103,79 @@
 @media($breakpoint-small){
   @include grid('sm');
 
+    .container {
+      height: calc(100vh - #{$topbar-height}); 
+    }
+
+
   .sidebar {
     width: 50px;
+    position: relative; 
+  }
+
+  .sidebar-one {
+    h2 {
+      display: none;
+    }
+    .hamburger {
+      margin: 10px 0;
+      padding-left: 5px;
+    }
+  }
+
+  .sidebar-two {
+    ul {
+      margin: 0 0;
+      li {
+        padding: 0.5em 0.4em; 
+        .sidebar-text {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .sidebar-three {
+    padding: 0;
+    margin: 10px 0;
+    //border-bottom: 1px solid $color-four;
+    
+    h4 {
+      display: none;
+    }
+    .sidebar-img {
+     margin: 10px 0 5px 5px;
+      
+    }
+
+    .dot-sidebar {
+      top: -7px;
+      left: 35px;
+    }
+    .name {
+      display: none;
+    }
+  }
+
+  .navigation {
+    //flex-direction: column;
+    position: absolute;
+    bottom: 170px;
+    left: 10px;
+    background-color: transparent;
+    display: block;
+    ul li {
+      display: block;
+      padding: 8px;
+      
+    }
+    .nav-text {
+      display: none;
+    }
+    .dot-notification {
+      top: -8px;
+      left: 32px;
+    }
   }
 
   .container-sections {
