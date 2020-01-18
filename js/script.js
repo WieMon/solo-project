@@ -59,27 +59,39 @@ var chart = new Chart(ctx, {
 
 /*Sidebar*/
 
-let navMenu = document.querySelector('#menu');
+let sideMenu = document.querySelector('#menu');
+let navMenu = document.querySelector('#nav-menu');
+//console.log('navMenu', navMenu);
 //console.log('navMenu', navMenu);
 
 window.addEventListener('resize', function(){
   if (window.screen.width < 767) {
-  navMenu.classList.add('collapse');
+  sideMenu.classList.add('collapse');
+  sideMenu.classList.add('position-over');
+  sideMenu.classList.add('position-opacity');
+  navMenu.classList.add('position-over-nav');
   console.log('I am small');
   
 } else {
-  navMenu.classList.remove('collapse');
-  console.log('I am big');
-}
+    sideMenu.classList.remove('collapse');
+    sideMenu.classList.remove('position-over');
+    sideMenu.classList.remove('position-opacity');
+    navMenu.classList.remove('position-over-nav');
+    console.log('I am big');
+  }
 });
-
 
 function toggleMenu(visible) {
   document.querySelector('.sidebar').classList.toggle('collapse', visible)
 }
 
+/*function toggleNav() {
+  document.querySelector('.navigation').classList.toggle('nav-mobile-click')
+}*/
+
 document.querySelector('.hamburger').addEventListener('click', function(e) {
   e.preventDefault();
-  toggleMenu()
+  toggleMenu();
+  //toggleNav();
   console.log('click');
 });

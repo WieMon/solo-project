@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   background: $paragraph-color;
+  //height: calc(100vh - #{$topbar-height});
   i {
     margin: 0 0 0 0.5em;
     padding-right: 1em;
@@ -99,9 +100,20 @@
   }
 }
 
+.position-over {
+  z-index: 1;
+  position: absolute;
+  height: calc(100vh - #{$topbar-height});
+ }
+
+ .position-opacity {
+  opacity: 0.8;
+ }
+
 .collapse {
   width: 50px;
-  position: relative; 
+  position: relative;
+  //z-index: 2;
   .sidebar-one {
     h2 {
       display: none;

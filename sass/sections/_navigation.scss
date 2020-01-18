@@ -9,35 +9,33 @@
     padding: 0;
     margin: 0;
   }
-  li {
-    display: inline-block;
-    position: relative;
-    height: 100%;
-    list-style-type: none; 
-    text-decoration: none;
-    padding: 1.3em 0.5em 0.5em 0.5em;
-    margin-right: -2px;
-    margin-left: -3px;
-    border-left: 1px solid $color-two;
-  
-    &:last-of-type {
-      margin-right: 0;
-    }
-    &:hover {
-      background: $color-three;
-    }
-    a {
-      padding: 0;
-      margin: 0;
+    li {
+      display: inline-block;
+      position: relative;
+      height: 100%;
+      list-style-type: none; 
       text-decoration: none;
-      color: $color-one;
-      font-size: $font-size-one;
-      font-family: $paragraph-font;
-      
-    }
-    i {
-      padding: 0.7em;
-      font-size: $font-size-two;
+      padding: 1.3em 0.5em 0.5em 0.5em;
+      margin-right: -2px;
+      margin-left: -3px;
+      border-left: 1px solid $color-two;
+      &:last-of-type {
+        margin-right: 0;
+      }
+      &:hover {
+        background: $color-three;
+      }
+      a {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        color: $color-one;
+        font-size: $font-size-one;
+        font-family: $paragraph-font;
+      }
+        i {
+          padding: 0.7em;
+          font-size: $font-size-two;
     }
   }
 }
@@ -61,12 +59,20 @@
 
 .nav-name .nav-text {
   color: $color-twelve;
- 
   i {
     color: $color-two; 
     //padding-left: 0.5em;
   }
 }
 
+.position-over-nav {
+  position: absolute;
+  color: red;
+}
 
+.nav-mobile-click {
+  display: inline;
+  bottom: 47px;
+  background-color: red;
+}
 

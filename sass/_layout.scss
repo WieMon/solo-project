@@ -18,6 +18,7 @@
   flex-direction: column;
   width: calc(#{$container-max-width} - #{$sidebar-width});
   background: $color-three;
+  height: 100%;
 }
 
 .container-sections {
@@ -115,65 +116,23 @@
 
   .container {
     height: calc(100vh - #{$topbar-height}); 
+    //height: 100vh;
   }
-
-  /*.sidebar {
-    width: 50px;
-    position: relative; 
-    .sidebar-one {
-      h2 {
-        display: none;
-      }
-      .hamburger {
-        margin: 10px 0;
-        padding-left: 5px;
-      }
-    }
-    .sidebar-two {
-      ul {
-        margin: 0 0;
-        li {
-          padding: 0.5em 0.4em; 
-          .sidebar-text {
-            display: none;
-          }
-        }
-      }
-    }
-    .sidebar-three {
-      padding: 0;
-      margin: 10px 0;
-      h4 {
-        display: none;
-      }
-      .sidebar-img {
-       margin: 10px 0 5px 5px;
-      }
-      .dot-sidebar {
-        top: -7px;
-        left: 35px;
-      }
-      .name {
-        display: none;
-      }
-    }
-  }*/
-
-  /*.sidebar {
-    display: none;
-  }*/
 
   .navigation {
     //flex-direction: column;
     position: absolute;
-    bottom: 170px;
+    bottom: 191px;
     left: 10px;
     background-color: transparent;
     display: block;
+    z-index: 3;
     ul li {
       display: block;
       padding: 8px;
-      
+      &:hover {
+        background: transparent;
+      }
     }
     .nav-text {
       display: none;
@@ -181,6 +140,17 @@
     .dot-notification {
       top: -8px;
       left: 32px;
+    }
+    .nav-wallet {
+      i {
+        display: block;
+        padding: 0 8px 8px 14px;
+        margin: 0;
+        &:nth-of-type(2) {
+          padding: 5px 15px;
+          margin: 0;
+        }
+      }
     }
   }
 
@@ -281,87 +251,6 @@
 @media(min-width: 1200px) {
   @include grid('xl');
 }
-
-/*@media ($breakpoint-mobile){
-  .table-links td {
-    display: inline-block;
-    padding-left: 20px;
-  }
-}*/
-
-/*@media ($breakpoint-mobile) {
-  .row-chart {
-    width: 80%;
-    margin: 20px auto;
-    padding: 2em 0;
-  }
-  .row-title {
-    text-align: center;
-    
-  }
-  .row-legend {
-    padding-bottom: 1em;
-    .btn-legend {
-      margin: 0.2em;
-     p {
-       margin: 5px;
-     }
-      
-    }
-    .dot {
-      margin: 10px 0 0 5px;
-      width: 8px;
-      height: 8px;
-      padding: 0;
-     
-    }
-  }
-}*/
-
-/*@media ($breakpoint-mobile) {
-  .table-data {
- 
-  margin: 20px auto;
-  td {
-    &:nth-of-type(odd){
-      display: inline-block;
-      }
-    }
-  }
-}*/
-
-/*@media ($breakpoint-mobile) {
-  .row-date {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  }
-  .date-i {
-    position: absolute;
-    right: 37px;
-    top: 18px;
-  }
-  .btn-date {
-    margin: 15px;
-  }
-}*/
-
-/*@media ($breakpoint-mobile) {
- 
-  .container-main {
-    flex-direction: column-reverse;
-  }
-}*/
-
-/*.sidebar {
-@media ($breakpoint-tablet) {
- 
-  width: $sidebar-tablet-width;
-}
-@media ($breakpoint-mobile) {
-  width: 0;
-  }
-}*/
 
 @media(max-width: 767px) {
   @include grid('sm');
