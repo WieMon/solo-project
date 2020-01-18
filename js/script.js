@@ -1,3 +1,4 @@
+/*Chart*/
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
@@ -54,4 +55,31 @@ var chart = new Chart(ctx, {
       }
     
   }
+});
+
+/*Sidebar*/
+
+let navMenu = document.querySelector('#menu');
+//console.log('navMenu', navMenu);
+
+window.addEventListener('resize', function(){
+  if (window.screen.width < 767) {
+  navMenu.classList.add('collapse');
+  console.log('I am small');
+  
+} else {
+  navMenu.classList.remove('collapse');
+  console.log('I am big');
+}
+});
+
+
+function toggleMenu(visible) {
+  document.querySelector('.sidebar').classList.toggle('collapse', visible)
+}
+
+document.querySelector('.hamburger').addEventListener('click', function(e) {
+  e.preventDefault();
+  toggleMenu()
+  console.log('click');
 });

@@ -35,6 +35,11 @@
   &:last-child {
     margin-bottom: 0;
   }
+  h4 {
+    margin: -1px;
+    color: $color-one;
+    font-family: $paragraph-font;
+  }
 }
 
 .row {
@@ -79,6 +84,11 @@
 .row-title {
   padding: 0;
   margin: 0;
+  h4 {
+    padding: 1em 0 1.5em 0;
+    font-size: $paragraph-font-size;
+    font-family: $paragraph-font;
+  }
 }
 
 .row-legend {
@@ -103,59 +113,55 @@
 @media($breakpoint-small){
   @include grid('sm');
 
-    .container {
-      height: calc(100vh - #{$topbar-height}); 
-    }
+  .container {
+    height: calc(100vh - #{$topbar-height}); 
+  }
 
-
-  .sidebar {
+  /*.sidebar {
     width: 50px;
     position: relative; 
-  }
-
-  .sidebar-one {
-    h2 {
-      display: none;
+    .sidebar-one {
+      h2 {
+        display: none;
+      }
+      .hamburger {
+        margin: 10px 0;
+        padding-left: 5px;
+      }
     }
-    .hamburger {
-      margin: 10px 0;
-      padding-left: 5px;
-    }
-  }
-
-  .sidebar-two {
-    ul {
-      margin: 0 0;
-      li {
-        padding: 0.5em 0.4em; 
-        .sidebar-text {
-          display: none;
+    .sidebar-two {
+      ul {
+        margin: 0 0;
+        li {
+          padding: 0.5em 0.4em; 
+          .sidebar-text {
+            display: none;
+          }
         }
       }
     }
-  }
+    .sidebar-three {
+      padding: 0;
+      margin: 10px 0;
+      h4 {
+        display: none;
+      }
+      .sidebar-img {
+       margin: 10px 0 5px 5px;
+      }
+      .dot-sidebar {
+        top: -7px;
+        left: 35px;
+      }
+      .name {
+        display: none;
+      }
+    }
+  }*/
 
-  .sidebar-three {
-    padding: 0;
-    margin: 10px 0;
-    //border-bottom: 1px solid $color-four;
-    
-    h4 {
-      display: none;
-    }
-    .sidebar-img {
-     margin: 10px 0 5px 5px;
-      
-    }
-
-    .dot-sidebar {
-      top: -7px;
-      left: 35px;
-    }
-    .name {
-      display: none;
-    }
-  }
+  /*.sidebar {
+    display: none;
+  }*/
 
   .navigation {
     //flex-direction: column;
@@ -262,8 +268,6 @@
     width: 100%;
     margin: 20px auto;
   }
-
-  
 }
 
 @media(min-width: 768px) {

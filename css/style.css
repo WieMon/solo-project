@@ -390,16 +390,6 @@ template {
   border-radius: 50%;
 }
 
-.dot-sidebar {
-  position: absolute;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  top: 50px;
-  left: 55px;
-  background: #04AE00;
-}
-
 .dot-signup {
   background: #8DBEC8;
 }
@@ -420,35 +410,6 @@ template {
   width: 5px;
   border-radius: 50%;
   background: #F58220;
-}
-
-/*Titles*/
-.section h4 {
-  margin: -1px;
-  color: #979797;
-  font-family: "Open Sans", Helvetica, Arial;
-}
-
-.row-title h4 {
-  padding: 1em 0 1.5em 0;
-  font-size: 16px;
-  font-family: "Open Sans", Helvetica, Arial;
-}
-
-.sidebar-one h2 {
-  margin: 0;
-  padding: 0.5em;
-  color: #E3E3E3;
-  font-family: "Damion", cursive;
-  font-weight: 400;
-}
-
-.sidebar-three h4 {
-  padding: 0.8em;
-  margin-bottom: 0.4em;
-  font-weight: 100;
-  font-size: 14px;
-  font-family: "Open Sans", Helvetica, Arial;
 }
 
 /*Table---*/
@@ -600,6 +561,7 @@ fieldset:hover .date-i {
 }
 
 /*Sidebar*/
+/*Sidebar-mobile*/
 .sidebar {
   width: 195px;
   display: -ms-flexbox;
@@ -616,46 +578,54 @@ fieldset:hover .date-i {
   font-size: 0.8em;
 }
 
-.sidebar-one .hamburger {
+.sidebar .sidebar-one .hamburger {
   margin: 0.5em 0.5em 0.5em 1.7em;
   padding: 0.6em;
   color: #E3E3E3;
 }
 
-.sidebar-one .hamburger:hover {
+.sidebar .sidebar-one .hamburger:hover {
   transform: scale(1.2);
   transition: 0.5s;
 }
 
-.sidebar-one .hamburger-icon {
+.sidebar .sidebar-one .hamburger-icon {
   font-size: 20px;
   padding-right: 0;
 }
 
-.sidebar-two {
+.sidebar .sidebar-one h2 {
+  margin: 0;
+  padding: 0.5em;
+  color: #E3E3E3;
+  font-family: "Damion", cursive;
+  font-weight: 400;
+}
+
+.sidebar .sidebar-two {
   margin-top: 0;
   border-bottom: 1px solid #F5F5F2;
 }
 
-.sidebar-two ul {
+.sidebar .sidebar-two ul {
   margin: 2em 0;
   padding: 0;
   width: 195px;
 }
 
-.sidebar-two ul li {
+.sidebar .sidebar-two ul li {
   list-style-type: none;
   padding: 0.7em 0.6em;
   margin: 0;
 }
 
-.sidebar-two ul li:hover {
+.sidebar .sidebar-two ul li:hover {
   background: #2f3640;
   border-left: 5px solid #FFA200;
   transition: 0.5s;
 }
 
-.sidebar-two ul li a {
+.sidebar .sidebar-two ul li a {
   padding: 0.5em;
   color: #E3E3E3;
   text-decoration: none;
@@ -664,14 +634,14 @@ fieldset:hover .date-i {
   font-weight: 100;
 }
 
-.sidebar-three {
+.sidebar .sidebar-three {
   position: relative;
   padding: 0 0.5em;
   font-family: "Open Sans", Helvetica, Arial;
   color: #E3E3E3;
 }
 
-.sidebar-three .name {
+.sidebar .sidebar-three .name {
   display: inline-block;
   color: #56819F;
   font-size: 14px;
@@ -679,13 +649,79 @@ fieldset:hover .date-i {
   margin: 0 0 0 10px;
 }
 
-.sidebar-img {
+.sidebar .sidebar-three .sidebar-img {
   height: 50px;
   width: 40px;
   border-radius: 45px;
   margin: 0 0 0 0.9em;
   padding: 0;
   vertical-align: middle;
+}
+
+.sidebar .sidebar-three .dot-sidebar {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  top: 50px;
+  left: 55px;
+  background: #04AE00;
+}
+
+.sidebar .sidebar-three h4 {
+  padding: 0.8em;
+  margin-bottom: 0.4em;
+  font-weight: 100;
+  font-size: 14px;
+  font-family: "Open Sans", Helvetica, Arial;
+}
+
+.collapse {
+  width: 50px;
+  position: relative;
+}
+
+.collapse .sidebar-one h2 {
+  display: none;
+}
+
+.collapse .sidebar-one .hamburger {
+  margin: 10px 0;
+  padding-left: 5px;
+}
+
+.collapse .sidebar-two ul {
+  margin: 0 0;
+}
+
+.collapse .sidebar-two ul li {
+  padding: 0.5em 0.4em;
+}
+
+.collapse .sidebar-two ul li .sidebar-text {
+  display: none;
+}
+
+.collapse .sidebar-three {
+  padding: 0;
+  margin: 10px 0;
+}
+
+.collapse .sidebar-three h4 {
+  display: none;
+}
+
+.collapse .sidebar-three .sidebar-img {
+  margin: 10px 0 5px 5px;
+}
+
+.collapse .sidebar-three .dot-sidebar {
+  top: -7px;
+  left: 35px;
+}
+
+.collapse .sidebar-three .name {
+  display: none;
 }
 
 /*Navigation*/
@@ -805,6 +841,12 @@ fieldset:hover .date-i {
   margin-bottom: 0;
 }
 
+.section h4 {
+  margin: -1px;
+  color: #979797;
+  font-family: "Open Sans", Helvetica, Arial;
+}
+
 .row {
   display: -ms-flexbox;
   display: flex;
@@ -852,6 +894,12 @@ fieldset:hover .date-i {
 .row-title {
   padding: 0;
   margin: 0;
+}
+
+.row-title h4 {
+  padding: 1em 0 1.5em 0;
+  font-size: 16px;
+  font-family: "Open Sans", Helvetica, Arial;
 }
 
 .row-legend {
@@ -938,43 +986,50 @@ fieldset:hover .date-i {
   .container {
     height: calc(100vh - 60px);
   }
-  .sidebar {
+  /*.sidebar {
     width: 50px;
-    position: relative;
-  }
-  .sidebar-one h2 {
+    position: relative; 
+    .sidebar-one {
+      h2 {
+        display: none;
+      }
+      .hamburger {
+        margin: 10px 0;
+        padding-left: 5px;
+      }
+    }
+    .sidebar-two {
+      ul {
+        margin: 0 0;
+        li {
+          padding: 0.5em 0.4em; 
+          .sidebar-text {
+            display: none;
+          }
+        }
+      }
+    }
+    .sidebar-three {
+      padding: 0;
+      margin: 10px 0;
+      h4 {
+        display: none;
+      }
+      .sidebar-img {
+       margin: 10px 0 5px 5px;
+      }
+      .dot-sidebar {
+        top: -7px;
+        left: 35px;
+      }
+      .name {
+        display: none;
+      }
+    }
+  }*/
+  /*.sidebar {
     display: none;
-  }
-  .sidebar-one .hamburger {
-    margin: 10px 0;
-    padding-left: 5px;
-  }
-  .sidebar-two ul {
-    margin: 0 0;
-  }
-  .sidebar-two ul li {
-    padding: 0.5em 0.4em;
-  }
-  .sidebar-two ul li .sidebar-text {
-    display: none;
-  }
-  .sidebar-three {
-    padding: 0;
-    margin: 10px 0;
-  }
-  .sidebar-three h4 {
-    display: none;
-  }
-  .sidebar-three .sidebar-img {
-    margin: 10px 0 5px 5px;
-  }
-  .sidebar-three .dot-sidebar {
-    top: -7px;
-    left: 35px;
-  }
-  .sidebar-three .name {
-    display: none;
-  }
+  }*/
   .navigation {
     position: absolute;
     bottom: 170px;
