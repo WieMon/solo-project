@@ -801,23 +801,90 @@ fieldset:hover .date-i {
   padding-right: 0.5em;
 }
 
-.nav-name .nav-text {
+.navigation .nav-text-one {
+  color: #979797;
+}
+
+.navigation .nav-text-two {
   color: #56819F;
 }
 
-.nav-name .nav-text i {
-  color: #B2B2B2;
-}
-
-.position-over-nav {
+.navigation-mobile {
   position: absolute;
-  color: red;
+  bottom: 191px;
+  left: 10px;
+  background-color: transparent;
+  display: block;
+  z-index: 3;
 }
 
-.nav-mobile-click {
-  display: inline;
-  bottom: 47px;
-  background-color: red;
+.navigation-mobile li {
+  display: block;
+  padding: 8px;
+  height: auto;
+}
+
+.navigation-mobile li:hover {
+  background: transparent;
+}
+
+.navigation-mobile .dot-notification {
+  top: -8px;
+  left: 32px;
+}
+
+.navigation-mobile .nav-wallet i {
+  display: block;
+  padding: 0 8px 8px 14px;
+  margin: 0;
+}
+
+.navigation-mobile .nav-wallet i:nth-of-type(2) {
+  padding: 5px 15px;
+  margin: 0;
+}
+
+.navigation-mobile .nav-text-one, .navigation-mobile .nav-text-two {
+  display: none;
+}
+
+.navigation-mobile-bottom {
+  position: absolute;
+  bottom: 43px;
+  left: 30px;
+  background-color: transparent;
+  display: inline-block;
+  z-index: 3;
+  margin: 0;
+}
+
+.navigation-mobile-bottom li {
+  display: inline-block;
+  padding: 0;
+  border-left: none;
+}
+
+.navigation-mobile-bottom li:hover {
+  background: transparent;
+}
+
+.navigation-mobile-bottom li a {
+  padding: 0;
+}
+
+.navigation-mobile-bottom .dot-notification {
+  top: -13px;
+  left: 26px;
+}
+
+.navigation-mobile-bottom .nav-wallet i {
+  display: inline-block;
+  padding: 4px;
+}
+
+.navigation-mobile-bottom .nav-wallet i:nth-of-type(2) {
+  padding: 4px;
+  margin-left: 6px;
 }
 
 *, *::before, *::after {
@@ -1008,37 +1075,40 @@ fieldset:hover .date-i {
   .container {
     height: calc(100vh - 60px);
   }
-  .navigation {
+  /*.navigation {
+    //flex-direction: column;
     position: absolute;
     bottom: 191px;
     left: 10px;
     background-color: transparent;
     display: block;
     z-index: 3;
-  }
-  .navigation ul li {
-    display: block;
-    padding: 8px;
-  }
-  .navigation ul li:hover {
-    background: transparent;
-  }
-  .navigation .nav-text {
-    display: none;
-  }
-  .navigation .dot-notification {
-    top: -8px;
-    left: 32px;
-  }
-  .navigation .nav-wallet i {
-    display: block;
-    padding: 0 8px 8px 14px;
-    margin: 0;
-  }
-  .navigation .nav-wallet i:nth-of-type(2) {
-    padding: 5px 15px;
-    margin: 0;
-  }
+    li {
+      display: block;
+      padding: 8px;
+      &:hover {
+        background: transparent;
+      }
+    }
+    .dot-notification {
+      top: -8px;
+      left: 32px;
+    }
+    .nav-wallet {
+      i {
+        display: block;
+        padding: 0 8px 8px 14px;
+        margin: 0;
+        &:nth-of-type(2) {
+          padding: 5px 15px;
+          margin: 0;
+        }
+      }
+    }
+    .nav-text-one, .nav-text-two {
+      display: none;
+    }
+  }*/
   .container-sections {
     padding: 0.4em;
     padding-left: 0;

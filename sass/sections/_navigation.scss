@@ -36,43 +36,101 @@
         i {
           padding: 0.7em;
           font-size: $font-size-two;
+        }
+      }
+  .nav-wallet {
+    font-weight: bold;
+    font-size: $font-size-two;
+    i {
+      font-weight: normal;
+      color: $color-two; 
+      padding-left: 0.3em;
+      margin-left: 8px;
+      &:nth-of-type(2) {
+        font-size: $font-size-one;
+        padding-left: 1.5em;
+        padding-right: 0.5em;
+      }
     }
   }
-}
-
-.navigation .nav-wallet {
-  font-weight: bold;
-  font-size: $font-size-two;
-  i {
-    font-weight: normal;
-    color: $color-two; 
-    padding-left: 0.3em;
-    margin-left: 8px;
-   
-    &:nth-of-type(2) {
-      font-size: $font-size-one;
-      padding-left: 1.5em;
-      padding-right: 0.5em;
-    }
+  .nav-text-one {
+    color: $color-one;
+  }
+  .nav-text-two {
+    color: $color-twelve;
   }
 }
 
-.nav-name .nav-text {
-  color: $color-twelve;
-  i {
-    color: $color-two; 
-    //padding-left: 0.5em;
-  }
-}
-
-.position-over-nav {
+.navigation-mobile {
+  //flex-direction: column;
   position: absolute;
-  color: red;
+  bottom: 191px;
+  left: 10px;
+  background-color: transparent;
+  display: block;
+  z-index: 3;
+  li {
+    display: block;
+    padding: 8px;
+    height: auto;
+    &:hover {
+      background: transparent;
+    }
+  }
+  .dot-notification {
+    top: -8px;
+    left: 32px;
+  }
+  .nav-wallet {
+    i {
+      display: block;
+      padding: 0 8px 8px 14px;
+      margin: 0;
+      &:nth-of-type(2) {
+        padding: 5px 15px;
+        margin: 0;
+      }
+    }
+  }
+  .nav-text-one, .nav-text-two {
+    display: none;
+  }
 }
 
-.nav-mobile-click {
-  display: inline;
-  bottom: 47px;
-  background-color: red;
+.navigation-mobile-bottom {
+  position: absolute;
+  bottom: 43px;
+  left: 30px;
+  background-color: transparent;
+  display: inline-block;
+  z-index: 3;
+  margin: 0;
+  li {
+    display: inline-block;
+    padding: 0;
+    border-left: none;
+    //height: auto;
+    &:hover {
+      background: transparent;
+    }
+    a {
+      padding: 0;
+    }
+  }
+  .dot-notification {
+    top: -13px;
+    left: 26px;
+  }
+  .nav-wallet {
+    i {
+      display: inline-block;
+      padding: 4px;
+      &:nth-of-type(2) {
+        padding: 4px;
+        margin-left: 6px;
+      }
+    }
+  }
 }
+
 

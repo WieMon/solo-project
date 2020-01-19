@@ -69,20 +69,27 @@ window.addEventListener('resize', function(){
   sideMenu.classList.add('collapse');
   sideMenu.classList.add('position-over');
   sideMenu.classList.add('position-opacity');
-  navMenu.classList.add('position-over-nav');
+  //navMenu.classList.add('position-over-nav');
+  navMenu.classList.add('navigation-mobile');
   console.log('I am small');
   
 } else {
     sideMenu.classList.remove('collapse');
     sideMenu.classList.remove('position-over');
     sideMenu.classList.remove('position-opacity');
-    navMenu.classList.remove('position-over-nav');
+    //navMenu.classList.remove('position-over-nav');
+    navMenu.classList.remove('navigation-mobile');
     console.log('I am big');
   }
 });
 
 function toggleMenu(visible) {
   document.querySelector('.sidebar').classList.toggle('collapse', visible)
+}
+function toggleNav(visible) {
+  if (window.screen.width < 767) {
+  document.querySelector('.navigation').classList.toggle('navigation-mobile-bottom', visible)
+  }
 }
 
 /*function toggleNav() {
@@ -92,6 +99,7 @@ function toggleMenu(visible) {
 document.querySelector('.hamburger').addEventListener('click', function(e) {
   e.preventDefault();
   toggleMenu();
-  //toggleNav();
+  toggleNav();
   console.log('click');
+  //console.log('toggleNav');
 });
