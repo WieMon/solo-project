@@ -12,6 +12,7 @@ input[type="number"]::-webkit-calendar-picker-indicator {
 }
 
 fieldset {
+  position: relative;
   padding: 0.2em;
   margin: 1.2em;
   border: 1px solid $color-three;
@@ -29,26 +30,21 @@ fieldset {
 .input {
   border: hidden;
   height: 30px;
-  //width: 140px;
   padding: 0.5em 0.5em 0.5em 1em;
   color:  $color-three;
   background: none;
   outline: none;
   cursor: pointer;
- 
-
 }
 
 .input-r {
   border-left: 1px solid $color-three;
-  //width: 160px;
   padding-left: 0.5em;
 }
 
-
 .date-i {
   position: absolute;
-  right: 387px;
-  top: 45px;
+  right: 9px;
+  top: 10px;
   color: $color-one;
 }

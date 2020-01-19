@@ -68,7 +68,7 @@ window.addEventListener('resize', function(){
   if (window.screen.width < 767) {
   sideMenu.classList.add('collapse');
   sideMenu.classList.add('position-over');
-  sideMenu.classList.add('position-opacity');
+  //sideMenu.classList.add('position-opacity');
   //navMenu.classList.add('position-over-nav');
   navMenu.classList.add('navigation-mobile');
   console.log('I am small');
@@ -76,7 +76,7 @@ window.addEventListener('resize', function(){
 } else {
     sideMenu.classList.remove('collapse');
     sideMenu.classList.remove('position-over');
-    sideMenu.classList.remove('position-opacity');
+    //sideMenu.classList.remove('position-opacity');
     //navMenu.classList.remove('position-over-nav');
     navMenu.classList.remove('navigation-mobile');
     console.log('I am big');
