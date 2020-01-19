@@ -5,47 +5,56 @@
   height: $topbar-height;
   padding: 0;
   margin: 0;
+
   ul {
     padding: 0;
     margin: 0;
   }
-    li {
-      display: inline-block;
-      position: relative;
-      height: 100%;
-      list-style-type: none; 
+
+  li {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 1.3em 0.5em 0.5em 0.5em;
+    margin-right: -2px;
+    margin-left: -3px;
+    border-left: 1px solid $color-two;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &:hover {
+      background: $color-three;
+    }
+
+    a {
+      padding: 0;
+      margin: 0;
       text-decoration: none;
-      padding: 1.3em 0.5em 0.5em 0.5em;
-      margin-right: -2px;
-      margin-left: -3px;
-      border-left: 1px solid $color-two;
-      &:last-of-type {
-        margin-right: 0;
-      }
-      &:hover {
-        background: $color-three;
-      }
-      a {
-        padding: 0;
-        margin: 0;
-        text-decoration: none;
-        color: $color-one;
-        font-size: $font-size-one;
-        font-family: $paragraph-font;
-      }
-        i {
-          padding: 0.7em;
-          font-size: $font-size-two;
-        }
-      }
+      color: $color-one;
+      font-size: $font-size-one;
+      font-family: $paragraph-font;
+    }
+
+    i {
+      padding: 0.7em;
+      font-size: $font-size-two;
+    }
+  }
+
   .nav-wallet {
     font-weight: bold;
     font-size: $font-size-two;
+
     i {
       font-weight: normal;
-      color: $color-two; 
+      color: $color-two;
       padding-left: 0.3em;
       margin-left: 8px;
+
       &:nth-of-type(2) {
         font-size: $font-size-one;
         padding-left: 1.5em;
@@ -53,9 +62,11 @@
       }
     }
   }
+
   .nav-text-one {
     color: $color-one;
   }
+
   .nav-text-two {
     color: $color-twelve;
   }
@@ -69,29 +80,35 @@
   background-color: transparent;
   display: block;
   z-index: 3;
+
   li {
     display: block;
     padding: 8px;
     height: auto;
+
     &:hover {
       background: transparent;
     }
   }
+
   .dot-notification {
     top: -8px;
     left: 32px;
   }
+
   .nav-wallet {
     i {
       display: block;
       padding: 0 8px 8px 14px;
       margin: 0;
+
       &:nth-of-type(2) {
         padding: 5px 15px;
         margin: 0;
       }
     }
   }
+  
   .nav-text-one, .nav-text-two {
     display: none;
   }
@@ -105,26 +122,31 @@
   display: inline-block;
   z-index: 3;
   margin: 0;
+
   li {
     display: inline-block;
     padding: 0;
     border-left: none;
-    //height: auto;
+  
     &:hover {
       background: transparent;
     }
+
     a {
       padding: 0;
     }
   }
+
   .dot-notification {
     top: -13px;
     left: 26px;
   }
+
   .nav-wallet {
     i {
       display: inline-block;
       padding: 4px;
+
       &:nth-of-type(2) {
         padding: 4px;
         margin-left: 6px;
@@ -132,5 +154,3 @@
     }
   }
 }
-
-

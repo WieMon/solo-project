@@ -4,16 +4,19 @@
   border-radius: 5px;
   background: $color-three;
   margin: 1em;
+
   &:last-of-type {
     background: none;
   }
+
   p {
     margin: 0.5em;
   }
 }
 
 .btn-date-link {
-  position: relative; 
+  position: relative;
+
   .btn-date-i {
     position: absolute;
     top: 12px;
@@ -28,6 +31,7 @@
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
+
   &:hover {
     background: $color-six;
   }

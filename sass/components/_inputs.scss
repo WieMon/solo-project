@@ -1,14 +1,14 @@
 /*Input------------------------------------------------------------*/
 input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
+  display: none;
+  -webkit-appearance: none;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
+  display: none;
+  -webkit-appearance: none;
 }
 
 fieldset {
@@ -18,8 +18,10 @@ fieldset {
   border: 1px solid $color-three;
   border-left: none;
   width: 320px;
+
   &:hover {
     border: 1px solid $color-thirteen;
+    
     .date-i {
       color: $color-thirteen;
     }
@@ -31,7 +33,7 @@ fieldset {
   border: hidden;
   height: 30px;
   padding: 0.5em 0.5em 0.5em 1em;
-  color:  $color-three;
+  color: $color-three;
   background: none;
   outline: none;
   cursor: pointer;

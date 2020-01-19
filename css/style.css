@@ -18,7 +18,7 @@ html {
 }
 
 /* Sections
-     ========================================================================== */
+  ========================================================================== */
 /**
    * Remove the margin in all browsers.
    */
@@ -43,7 +43,7 @@ h1 {
 }
 
 /* Grouping content
-     ========================================================================== */
+  ========================================================================== */
 /**
    * 1. Add the correct box sizing in Firefox.
    * 2. Show the overflow in Edge and IE.
@@ -327,7 +327,7 @@ summary {
 }
 
 /* Misc
-     ========================================================================== */
+  ========================================================================== */
 /**
    * Add the correct display in IE 10+.
    */
@@ -626,7 +626,7 @@ fieldset:hover .date-i {
   transition: 0.5s;
 }
 
-.sidebar .sidebar-two ul li a {
+.sidebar .sidebar-two a {
   padding: 0.5em;
   color: #E3E3E3;
   text-decoration: none;
@@ -705,7 +705,7 @@ fieldset:hover .date-i {
   padding: 0.5em 0.4em;
 }
 
-.collapse .sidebar-two ul li .sidebar-text {
+.collapse .sidebar-two .sidebar-text {
   display: none;
 }
 

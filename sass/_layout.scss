@@ -33,9 +33,11 @@
   margin-bottom: 1.3em;
   box-shadow: 0 0 1em $color-one;
   background: $color-four;
+  
   &:last-child {
     margin-bottom: 0;
   }
+
   h4 {
     margin: -1px;
     color: $color-one;
@@ -44,8 +46,8 @@
 }
 
 .row {
-  display: flex; 
-  flex-wrap: wrap; 
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .row-border {
@@ -62,6 +64,7 @@
   width: 66%;
   margin: 1em auto;
 }
+
 .row-item-center {
   align-items: center;
   justify-content: center;
@@ -80,6 +83,7 @@
 .row-title {
   padding: 0;
   margin: 0;
+
   h4 {
     padding: 1em 0 1.5em 0;
     font-size: $paragraph-font-size;
@@ -143,7 +147,6 @@
   }
 
   .table.table-small {
-        
     td {
       display: block;
       text-align: center;
@@ -156,17 +159,20 @@
   }
 
   .table-links .table-links-small {
-      text-align: center;
-      td {
+    text-align: center;
+
+    td {
       display: block;
+
       &:nth-of-type(3), &:nth-of-type(4) {
         display: inline-block;
       }
+
       &:nth-child(2) {
         padding-left: 40px !important;
-        }
       }
     }
+  }
     
   .chart {
     width: 100%;
@@ -179,12 +185,15 @@
 
   .row-item-center {
     padding-bottom: 1em;
+
     .btn-legend {
       margin: 0.2em;
-     p {
-       margin: 5px;
+
+      p {
+        margin: 5px;
       }
     }
+
     .dot {
       margin: 10px 0 0 5px;
       width: 8px;

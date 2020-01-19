@@ -10,17 +10,21 @@
   font-family: $paragraph-font;
   font-size: $paragraph-font-size;
   border-collapse: collapse;
+
   tr {
     border-bottom: 1px solid $color-three;
+
     &:hover {
       background: $color-three;
       cursor: pointer;
     }
   }
+
   td {
     padding: 20px 5px 7px 5px;
     
     text-align: left;
+
     &:nth-child(even) {
       width: 30%;
       border: none;
@@ -28,6 +32,7 @@
       text-align: right;
       color: $paragraph-color;
     }
+
     &:nth-child(odd) {
       color: $color-one;
       font-weight: bold;
@@ -43,44 +48,51 @@
 .table-links {
   font-family: $paragraph-font;
   margin-top: 0;
+
   
   tr {
     text-align: left;
     border-bottom: 1px solid $color-three;
+
     &:first-child {
       border-top: 1px solid $color-three;
     }
+
     &:hover {
       background: $color-three;
       transition: 1s;
+
       i {
         opacity: 1;
+
         &:hover {
           color: $color-five;
         }
       }
     }
   
-  td {
+    td {
     
-    padding: 1.3em;
-    &:nth-child(odd) {
-      color: $color-one;
+      padding: 1.3em;
+
+      &:nth-child(odd) {
+        color: $color-one;
+      }
+
+      &:nth-child(2) {
+        padding-left: 155px;
+      }
     }
-    &:nth-child(2) {
-      padding-left: 155px;
+  
+    a {
+      text-decoration: none;
+      color: $color-twelve;
     }
-    
-   
-  }
-  a {
-    text-decoration: none;
-    color: $color-twelve;
-  }
-  i {
-    height: 15px;
-    width: 15px;
-    opacity: 0;
+
+    i {
+      height: 15px;
+      width: 15px;
+      opacity: 0;
     }
   }
 }
