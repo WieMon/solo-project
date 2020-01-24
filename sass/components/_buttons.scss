@@ -1,29 +1,3 @@
-.btn-legend {
-  display: flex;
-  flex-direction: row;
-  border-radius: 5px;
-  background: $color-three;
-  margin: 1em;
-
-  &:last-of-type {
-    background: none;
-  }
-
-  p {
-    margin: 0.5em;
-  }
-}
-
-.btn-date-link {
-  position: relative;
-
-  .btn-date-i {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-  }
-}
-
 .btn {
   text-decoration: none;
   background: $color-five;

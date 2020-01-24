@@ -50,3 +50,28 @@ fieldset {
   top: 10px;
   color: $color-one;
 }
+
+.btn-date-link {
+  position: relative;
+
+  .btn-date-i {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+  }
+}
+
+@media($breakpoint-small){
+  @include grid('sm');
+
+  .date-small.date-i {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .btn-date {
+    margin: 15px;
+  }
+
+}

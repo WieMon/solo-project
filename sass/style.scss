@@ -1,15 +1,17 @@
 @import "variables";
 @import "mixins";
 @import "normalize";
-//@import "layout";
+@import "layout";
 @import "components/buttons";
 @import "components/dots";
-@import "components/titles";
-@import "components/tables";
-@import "components/inputs";
-@import "sections/sidebar";
+@import "sections/input-form";
+@import "sections/table-wrapper";
 @import "sections/navigation";
-@import "layout";
+@import "sections/sidebar";
+@import "sections/table-links";
+@import "sections/chart";
+
+//@import "layout";
 
 /* Components */
 //@import "components/form_field";

@@ -74,29 +74,6 @@
   border-collapse: collapse;
 }
 
-.row-chart {
-  flex-direction: column;
-  padding: 40px 0;
-  width: 100%;
-}
-
-.row-title {
-  padding: 0;
-  margin: 0;
-
-  h4 {
-    padding: 1em 0 1.5em 0;
-    font-size: $paragraph-font-size;
-    font-family: $paragraph-font;
-  }
-}
-
-.row-legend {
-  flex-wrap: nowrap;
-  width: 35%;
-  margin: 0 auto;
-}
-
 .row-btn { 
   text-align: center;
   padding: 2em;
@@ -126,90 +103,18 @@
     padding-left: 0;
   }
 
-  .row-date {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .date-small.date-i {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-  }
-
-  .btn-date {
-    margin: 15px;
-  }
-  
-  .table-wrapper {
-    margin: 0 35px;
-  }
-
-  .table.table-small {
-    td {
-      display: block;
-      text-align: center;
-      padding-left: 5px;
-      
-      &:nth-of-type(2) {
-        margin: 0 auto;
-      }
-    }
-  }
-
-  .table-links .table-links-small {
-    text-align: center;
-
-    td {
-      display: block;
-
-      &:nth-of-type(3), &:nth-of-type(4) {
-        display: inline-block;
-      }
-
-      &:nth-child(2) {
-        padding-left: 40px !important;
-      }
-    }
-  }
-    
-  .chart {
-    width: 100%;
-    padding: 20px;
-  }
-    
   .row-title {
     text-align: center;
   }
 
   .row-item-center {
     padding-bottom: 1em;
-
-    .btn-legend {
-      margin: 0.2em;
-
-      p {
-        margin: 5px;
-      }
-    }
-
-    .dot {
-      margin: 10px 0 0 5px;
-      width: 8px;
-      height: 8px;
-      padding: 0;
-    }
   }
 
   .row-center {
     width: 85%;
   }
 
-  .row-chart {
-    width: 100%;
-    margin: 20px auto;
-  }
 }
 
 @media(min-width: 768px) {

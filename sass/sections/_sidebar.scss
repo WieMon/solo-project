@@ -1,11 +1,10 @@
 /*Sidebar*/
-/*Sidebar-mobile*/
 .sidebar {
   width: $sidebar-width;
   display: flex;
   flex-direction: column;
   background: $paragraph-color;
-
+  height: 100vh;
   i {
     margin: 0 0 0 0.5em;
     padding-right: 1em;
@@ -114,17 +113,21 @@
       font-family: $paragraph-font;
     }
   }
+
+  .navigation-mobile {
+    display: none;
+  }
 }
 
-.position-over {
+/*.position-over {
   z-index: 1;
   position: absolute;
   height: calc(100vh - #{$topbar-height});
-}
+}*/
 
 .collapse {
   width: 50px;
-  position: relative;
+  //position: relative;
   
   .sidebar-one {
     h2 {
@@ -139,7 +142,7 @@
 
   .sidebar-two {
     ul {
-      margin: 0 0;
+      margin: 0;
 
       li {
         padding: 0.5em 0.4em;
@@ -175,7 +178,44 @@
       display: none;
     }
   }
+
+  .navigation-mobile {
+    position: relative;
+    background-color: transparent;
+    display: block;
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      display: block;
+      padding: 0.5em 0.5em 0.5em 0.6em;
+      height: auto;
+      &:hover {
+        background: transparent;
+      }
+    }
+        
+    .dot-notification-aside {
+      position: absolute;
+      top: 67px;
+      left: 20px;
+      color: $color-five;
+      height: 5px;
+      width: 5px;
+      border-radius: 50%;
+      background: $color-five;
+    
+    }
+  }
 }
 
  
+@media($breakpoint-small){
+  @include grid('sm');
+
+  .sidebar {
+    height: calc(100vh - #{$topbar-height});
+  }
+}
 

@@ -17,13 +17,16 @@
   background: #71B374;
 }
 
-.dot-notification {
-  position: absolute;
-  top: 5px;
-  left: 32px;
-  height: 5px;
-  width: 5px;
-  border-radius: 50%;
-  background: $color-five;
+@media($breakpoint-small){
+  @include grid('sm');
+
+  .dot {
+    margin: 10px 0 0 5px;
+    width: 8px;
+    height: 8px;
+    padding: 0;
+  }
 }
+
+
 

@@ -59,37 +59,27 @@ var Chart = new Chart(ctx, {
 /*Sidebar*/
 
 let sideMenu = document.querySelector('#menu');
-let navMenu = document.querySelector('#nav-menu');
-//console.log('navMenu', navMenu);
 
-window.addEventListener('resize', function(){
-  if (window.screen.width < 767) {
-    sideMenu.classList.add('collapse');
-    sideMenu.classList.add('position-over');
-    navMenu.classList.add('navigation-mobile');
-    //console.log('I am small');
-  
-  } else {
+function menuDesktop() {
+  if (window.screen.width > 767) {
     sideMenu.classList.remove('collapse');
-    sideMenu.classList.remove('position-over');
-    navMenu.classList.remove('navigation-mobile');
-    //console.log('I am big');
+    //sideMenu.classList.remove('position-over');
+    //console.log('Big');
+  } else {
+    //console.log('Small');
   }
-});
+}
+
+menuDesktop();
 
 function toggleMenu(visible) {
-  document.querySelector('.sidebar').classList.toggle('collapse', visible);
-}
-function toggleNav(visible) {
   if (window.screen.width < 767) {
-    document.querySelector('.navigation').classList.toggle('navigation-mobile-bottom', visible);
+    document.querySelector('.sidebar').classList.toggle('collapse', visible);
+    //document.querySelector('.sidebar').classList.toggle('position-over', visible);
   }
 }
 
 document.querySelector('.hamburger').addEventListener('click', function(e) {
   e.preventDefault();
   toggleMenu();
-  toggleNav();
-  //console.log('click');
-  //console.log('toggleNav');
 });

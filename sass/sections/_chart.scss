@@ -1,0 +1,55 @@
+.chart-wrapper {
+  flex-direction: column;
+  padding: 40px 0;
+  width: 100%;
+
+  .chart-title {
+    padding: 0;
+    margin: 0;
+  
+    h4 {
+      padding: 1em 0 1.5em 0;
+      font-size: $paragraph-font-size;
+      font-family: $paragraph-font;
+    }
+  }
+
+  .btn-legend {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    background: $color-three;
+    margin: 1em;
+  
+    &:last-of-type {
+      background: none;
+    }
+  
+    p {
+      margin: 0.5em;
+    }
+  }
+}
+
+@media($breakpoint-small){
+  @include grid('sm');
+
+  .chart {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .chart-wrapper {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .btn-legend {
+    margin: 0.2em;
+
+    p {
+      margin: 5px;
+    }
+  }
+
+}
