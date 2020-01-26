@@ -127,8 +127,8 @@
 
 .collapse {
   width: 50px;
-  //position: relative;
-  
+  position: absolute;
+  z-index: 2;
   .sidebar-one {
     h2 {
       display: none;
