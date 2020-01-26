@@ -119,16 +119,16 @@
   }
 }
 
-/*.position-over {
+.position-over {
   z-index: 1;
   position: absolute;
-  height: calc(100vh - #{$topbar-height});
-}*/
+  //height: calc(100vh - #{$topbar-height});
+}
 
 .collapse {
   width: 50px;
-  position: absolute;
-  z-index: 2;
+  //position: absolute;
+  //z-index: 2;
   .sidebar-one {
     h2 {
       display: none;

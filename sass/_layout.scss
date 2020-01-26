@@ -91,6 +91,13 @@
 
   .container-main {
     width: $sidebar-small-width;
+    margin: 0 30px;
+  }
+
+  .section {
+    h4 {
+      margin-left: 20px;
+    }
   }
 
   .container-sections {

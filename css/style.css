@@ -496,6 +496,10 @@ template {
   }
   .container-main {
     width: 1262px;
+    margin: 0 30px;
+  }
+  .section h4 {
+    margin-left: 20px;
   }
   .container-sections {
     padding: 0.4em;
@@ -1649,15 +1653,13 @@ fieldset:hover .date-i {
   display: none;
 }
 
-/*.position-over {
+.position-over {
   z-index: 1;
   position: absolute;
-  height: calc(100vh - 60px);
-}*/
+}
+
 .collapse {
   width: 50px;
-  position: absolute;
-  z-index: 2;
 }
 
 .collapse .sidebar-one h2 {
