@@ -119,12 +119,6 @@
   }
 }
 
-.position-over {
-  z-index: 1;
-  position: absolute;
-  //height: calc(100vh - #{$topbar-height});
-}
-
 .collapse {
   width: 50px;
   //position: absolute;
@@ -216,6 +210,12 @@
 
   .sidebar {
     height: calc(100vh - #{$topbar-height});
+  }
+
+  .position-over {
+    z-index: 1;
+    position: absolute;
+    //height: calc(100vh - #{$topbar-height});
   }
 }
 

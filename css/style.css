@@ -368,7 +368,7 @@ template {
 }
 
 .container-sections {
-  padding: 1em;
+  padding: 1em 0 1em 1em;
   height: calc(100vh - 60px);
   overflow-y: scroll;
 }
@@ -1076,7 +1076,6 @@ fieldset {
   padding: 0.2em;
   margin: 1.2em;
   border: 1px solid #E3E3E3;
-  border-left: none;
   width: 320px;
 }
 
@@ -1653,11 +1652,6 @@ fieldset:hover .date-i {
   display: none;
 }
 
-.position-over {
-  z-index: 1;
-  position: absolute;
-}
-
 .collapse {
   width: 50px;
 }
@@ -1800,6 +1794,10 @@ fieldset:hover .date-i {
   }
   .sidebar {
     height: calc(100vh - 60px);
+  }
+  .position-over {
+    z-index: 1;
+    position: absolute;
   }
 }
 
@@ -1962,6 +1960,7 @@ fieldset:hover .date-i {
 
 .chart-wrapper .btn-legend p {
   margin: 0.5em;
+  font-family: "Open Sans", Helvetica, Arial;
 }
 
 @media (max-width: 767px) {
